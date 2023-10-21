@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter First Number"
+        android:id="@+id/no1"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Second Number"
+        android:id="@+id/no2"
+        android:inputType="numberDecimal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+
+
+        >
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/add"
+        android:layout_margin="10dp"
+        android:backgroundTint="#AE4D8B"
+
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/sub"
+        android:backgroundTint="#AE4D8B"
+
+
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/mul"
+        android:backgroundTint="#AE4D8B"
+
+
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/divide"
+        android:backgroundTint="#AE4D8B"
+
+        android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/finalResultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:backgroundTint="@color/design_default_color_secondary"
+       />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:text=""/>
+
+
+
+
+</LinearLayout>
